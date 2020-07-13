@@ -1,0 +1,272 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background: ; */
+        }
+        #clock h2 {
+            color: white;
+            text-align: center;
+            font-size: 0.9cm;
+            letter-spacing: 0.2cm;
+            display: block;
+            margin: 10px 0;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        #clock #time {
+            display: flex;
+            
+        }
+        #clock #time div {
+            position: relative;
+            margin: 0 5px;
+        }
+         /* .hour span{ */
+        #clock #time div span{
+            position: relative;
+            background:#00bcd4 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+            height: 80px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+            z-index: 10;
+            color: white;
+            font-weight: 100;
+            font-size: 3rem;
+            }        
+
+            #clock #time div span:last-child {
+                height: 30px;
+                font-size: 0.7cm;
+                font-weight: 500;
+                letter-spacing: 0.2cm;
+                text-transform: uppercase;
+                background:#b2ebf2 ;
+            }
+            .minut {
+            /* #clock #time div span:nth-child(2) span { */
+                background:#dd2c00;
+
+            }
+            .span2{
+            /* #clock #time div span:nth-child(2) span:last-child { */
+                background: #dddd33;
+                
+            }
+
+            #clock #time div span:nth-child(2) span {
+                background: #342ead;
+
+            }
+            #clock #time div span:nth-child(2) span:last-child {
+                background:#342ead;
+                
+            }
+            #am-pm {
+                
+                width: 150px;
+                border-bottom: 5px solid crimson;
+                border-radius: 0 0 100px 100px;
+            }
+    </style>
+</head>
+<body>
+    
+
+    <div id="clock">
+        <h2>The time is now</h2>
+        <div id="time">
+         <div class="hour"><span class="span1">00</span><span class="span1">Hour</span></div>
+         <div class="minut"><span class="span2">00</span><span class="span2">Minutes</span></div>
+         <div class="second"><span class="span3">00</span><span class="span3">Second</span></div>
+         <div id="am-pm">AM</div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <style>
+     *{
+         margin: 0px;
+         padding: 0px;
+         font-family: cursive;
+     }
+      body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         background:#000a1f 
+     }
+     #clock h2 { 
+         color: white;
+     }
+     #clock #time {
+         display: flex;
+         
+
+     }
+     #clock #time div {
+         position: relative;
+         margin: 0 5px;
+         /* -webkit-box-reflect: below 1px linear-gradient(transparent #0004) ; */
+          -webkit-box-reflect:below 1px linear-gradient(transparent #0004) ;
+                
+     }
+     #clock #time div span {
+         background: cadetblue;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100px;
+         height: 80px;
+         box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+         z-index: 10;
+         color: white;
+         font-weight: 300;
+         
+     }
+     #clock #time div #h {
+         height: 30px;
+         background:#18b0b0 ;
+     }
+     #clock #time div #minut  {
+         background: yellow;
+     }
+     #clock #time div #m {
+         background: #f2a51a ;
+         height: 30px;
+     }
+     #clock #time div #sec  {
+         background:rebeccapurple;
+     }
+     #clock #time div #s {
+         background:purple;
+         height: 30px;
+     }
+     #clock #time div #msec  {
+         background:#ff5722;
+     }
+     #clock #time div #ms {
+         background: #dd2c00;
+         height: 30px;
+     }
+     #am-pm {
+         width: 100px;
+         height: 80px;
+         color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+         border-bottom: 5px solid crimson;
+         border-radius: 0 0 100px 100px;
+     }
+.btn {
+    display: inline-flex;
+    /* margin: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 100px; */
+    
+}
+button {
+     width: 70px;
+    height: 50px; 
+    margin: 20px;
+}
+ </style>
+</head>
+
+<body>
+
+
+
+    
+    <div id="clock">
+        <h2>Stop Watch</h2>
+        <div id="time">
+            
+            <!-- <div>hello</div> -->
+            <!-- <div class="hour"><span id="hour">00</span><span id="h">Hour</span></div>
+             -->
+            <div class="minut"><span id="minut">00</span><span id="m">Minutes</span></div>
+            <div class="second"><span id="sec">00</span><span id="s" >Second</span></div>
+            <div class="msecond"><span id="msec">00</span><span id="ms" >mmmSecond</span></div>
+           
+        </div>
+        <div id="am-pm"></div>
+
+        <div class="btn">
+            <button id="start" onclick="start()" >Start</button>
+            <button onclick="pause()">Pause</button>
+            <button id='reset' onclick="reset()">Reset</button>
+        </div>
+</div>
+
+<script>
+    // function fullti
+var mmin = 0;
+var msec = 0;
+var  mmsec= 0;
+var interval ;
+
+function timer () {
+    mmsec++
+    document.getElementById('msec').innerHTML=mmsec
+    if (mmsec >=100) {
+        msec++
+        document.getElementById('sec').innerHTML=msec
+        mmsec=0
+    }
+    if (msec>=5) {
+        mmin++
+        document.getElementById('minut').innerHTML=mmin
+        msec=0
+    }
+}
+function start() {
+interval=setInterval(timer,10)
+document.getElementById('start').disabled=true
+}
+function pause() {
+    clearInterval(interval)
+    document.getElementById('start').disabled=false    
+}
+function reset() {
+  document.getElementById('sec').innerHTML=00
+  document.getElementById('msec').innerHTML=00
+  document.getElementById('minut').innerHTML=00
+   document.getElementById('start').disabled=false
+   clearInterval(interval)
+}
+</script>
+</body>
+
+</html>
